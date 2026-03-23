@@ -11,27 +11,31 @@
         </nav>
         <main>
             <section>
-                <form>
-                <label for="comment" style="font-size: 1.5rem;">Lisää kommentti</label>
-                <br>
-                <textarea rows="8" cols="40" placeholder="Kommentti" id="comment"></textarea>
-                <br>
-                <label for="email">Sähköposti</label>
-                <input placeholder="Sähköposti" type="email" id="email">
-                <br>
-                <label for="birthday">Syntymäpäivä</label>
-                <input type="date" id="birthday">
-                <br>
-                <label for="agree">Tietoja saa käyttää markkinoinnissa</label>
-                <input type="checkbox" id="agree">
-                <br>
-                <label for="dropdown">Viesti on</label>
-                <select id="dropdown">
-                    <option>Kommentti</option>
-                    <option>Kysymys</option>
-                </select>
-                <button>Lähetä</button>
-                </form>
+                <button command="show-modal" commandfor="d">Kommentoi</button>
+                <dialog id="d">
+                     <button commandfor="d" command="close">Sulje</button>
+                    <form>
+                    <label for="comment" style="font-size: 1.5rem;">Lisää kommentti</label>
+                    <br>
+                    <textarea rows="8" cols="40" placeholder="Kommentti" id="comment"></textarea>
+                    <br>
+                    <label for="email">Sähköposti</label>
+                    <input placeholder="Sähköposti" type="email" id="email">
+                    <br>
+                    <label for="birthday">Syntymäpäivä</label>
+                    <input type="date" id="birthday">
+                    <br>
+                    <label for="agree">Tietoja saa käyttää markkinoinnissa</label>
+                    <input type="checkbox" id="agree">
+                    <br>
+                    <label for="dropdown">Viesti on</label>
+                    <select id="dropdown">
+                        <option>Kommentti</option>
+                        <option>Kysymys</option>
+                    </select>
+                    <button>Lähetä</button>
+                    </form>
+                </dialog>
             </section>
             <section>
                 <h2>Kommentit</h2>
