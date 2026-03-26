@@ -29,3 +29,32 @@ h4 {
     font-size: 18px;
     color: #2c2c2c;
 }
+
+a {
+    color: #c90f0f;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+a:visited {
+    color: gray;
+}
+
+button {
+    background-color: #c90f0f;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+form input:focus, textarea:focus {
+    background-color: rgb(255, 255, 69);
+}
+
+li:last-child {
+    font-family: cursive;
+}
