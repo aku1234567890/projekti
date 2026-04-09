@@ -1,3 +1,8 @@
+html, body {
+    background-image: url("./skeleton3.jpg");
+    background-repeat: repeat;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -8,7 +13,9 @@ body {
     "subnav main main"
     "footer footer footer";
     grid-template-rows: 8em 4em auto 4em;
+    
 }
+
 
 header {
     grid-area: header;
@@ -30,15 +37,21 @@ nav {
     margin-top: 1rem;
 }
 
+nav a {
+    background-color: #fff;
+}
+
 aside {
     display: flex;
     flex-direction: column;
     grid-area: subnav;
     border: 1px solid #000;
+    background-image: url("./skeleton.jpg");
 }
 
 aside a {
     margin: 2em 3em;
+    background-color: #fff;
 }
 
 main {
@@ -64,4 +77,8 @@ footer a {
 
 a {
     margin: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #fff;
 }
