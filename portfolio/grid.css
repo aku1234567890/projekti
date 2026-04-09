@@ -7,23 +7,27 @@ body {
     "navigation navigation navigation"
     "subnav main main"
     "footer footer footer";
-    grid-template-rows: 8em 8em auto 3em;
+    grid-template-rows: 8em 4em auto 4em;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: header;
     border: 1px solid #000;
 }
 
+header h1 {
+    margin: 0;
+    padding: 1rem 3rem;
+}
+
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: navigation;
     border: 1px solid #000;
+}
+
+.links {
+    margin: 1rem 3rem;
+    margin-top: 1rem;
 }
 
 aside {
@@ -33,9 +37,17 @@ aside {
     border: 1px solid #000;
 }
 
+aside a {
+    margin: 2em 3em;
+}
+
 main {
     grid-area: main;
     border: 1px solid #000;
+}
+
+main * {
+    margin: 5em 3em;
 }
 
 footer {
@@ -44,6 +56,10 @@ footer {
     align-items: center;
     grid-area: footer;
     border: 1px solid #000;
+}
+
+footer a {
+    margin: 3em 2em;
 }
 
 a {
