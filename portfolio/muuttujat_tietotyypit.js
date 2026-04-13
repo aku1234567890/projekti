@@ -1,17 +1,38 @@
-let a = 3;
-let b = 5;
-let c = 7;
-let d = 15;
 
-function summa() {
+function summa(a, b) {
     alert(a+b)
 }
-function vahennys() {
-    alert(b-c)
+function vahennys(a, b) {
+    alert(a-b)
 }
-function kerto() {
-    alert(c*d)
+function kerto(a, b) {
+    alert(a*b)
 }
-function jako() {
-    alert(d/a)
+function jako(a, b) {
+    alert(a/b)
+}
+
+
+function laskin_summa(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    summa(n1, n2)
+}
+
+function laskin_vahennys(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    vahennys(n1, n2)
+}
+
+function laskin_kerto(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    kerto(n1, n2)
+}
+
+function laskin_jako(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    jako(n1, n2)
 }
