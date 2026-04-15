@@ -76,3 +76,7 @@ li:last-child {
 h1, h2, h3, h4, h5, h6 {
     font-family: Datatype;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+}
