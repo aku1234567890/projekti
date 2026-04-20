@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Mediasivu</title>
+        <title>Keskustelusivu</title>
         <meta charset="UTF-8">
         <meta name="keywords" content="testi, ohjelmointi, koodaus">
-        <meta name="description" content="mediasivu">
+        <meta name="description" content="keskustelusivu">
         <meta name="author" content="Aku Lehtola">
         <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="../favicon.png" type="image/png">
         <meta name="robots" content="noindex, nofollow">
         <link rel="stylesheet" href="grid.css">
-        <script src="mediasivu.js" defer></script>
+        <script src="tehtavalista.js" defer></script>
     </head>
     <body>
-        <header><h1>Mediasivu</h1></header>
+        <header><h1>Tehtävälista</h1></header>
         <nav>
             <div class="links">
     <a href="../cv.html">Etusivu</a>
@@ -29,8 +30,13 @@
         <a href="https://taikukkula.fi/tiev25p/aku/web-ohjelmointi/portfolio/tehtavalista.html">Tehtävälista</a>
     </aside>
         <main>
-        <video src="oikotia.mp4" autoplay muted controls></video>
-        <a href="../portfolio/">Takaisin portfoliosivulle</a>
+            <section style="background-color: #fff;">
+                <ul id="gg">
+
+                </ul>
+                <input type="text" name="a" id="a"/>
+                <button onclick="lisaa()">Lisää</button>
+            </section>
         </main>
         <footer>
     <a href="https://turku.inschool.fi">Wilma</a>
