@@ -1,4 +1,4 @@
-lista = ["Tehtävä1", "Tehtävä2"]
+let lista = ["Tehtävä1", "Tehtävä2"]
 
 function paivitaLista() {
     document.querySelector("ul").innerHTML = "";
