@@ -11,6 +11,9 @@ function paivitaLista() {
 
 function lisaa() {
     let value = document.getElementById("a").value;
-    lista.push(value)
+    let count = document.getElementById("b").value;
+    for (i=0;i<count;i++) {
+        lista.push(value)
+    }
     paivitaLista()
 }
