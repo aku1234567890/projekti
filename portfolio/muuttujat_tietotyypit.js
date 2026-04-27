@@ -42,7 +42,7 @@ function date_and_time() {
     let m = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu"]
     let a = new Date().toLocaleDateString("fi-FI");
     document.getElementById("paivamaara").innerHTML = a;
-    let b = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds()
+    let b = new Date().toLocaleTimeString("fi-FI")
     document.getElementById("aika").innerHTML = b;
     let c = new Date().toLocaleString("fi-FI")
     document.getElementById("paivaJaAika").innerHTML = c;
