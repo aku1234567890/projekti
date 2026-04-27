@@ -57,7 +57,7 @@ function laheta() {
     let a = document.getElementById("age").value;
     let j = document.getElementById("job").value;
     let d = document.getElementById("drivers_license").checked;
-    if (age < 0) {
+    if (a < 0) {
         alert("Iän pitää olla positiivinen luku")
     } else {
         let w = {
