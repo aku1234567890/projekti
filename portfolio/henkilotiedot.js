@@ -35,6 +35,12 @@ let rivit = document.querySelector("tbody")
 function luoRivit() {
     rivit.innerHTML = "";
     for (let henkilo of henkilot) {
+        if (henkilo.age >= 18) {
+            henkilo.age = henkilo.age + "🍺"
+        }
+        if (henkilo.job == "Opiskelija") {
+            henkilo.job = henkilo.job + "🎓"
+        }
         let rivi = document.createElement("tr")
         for (let a in henkilo) {
             let w = document.createElement("td")
@@ -45,3 +51,24 @@ function luoRivit() {
     }
 }
 luoRivit();
+
+function laheta() {
+    let n = document.getElementById("name").value;
+    let a = document.getElementById("age").value;
+    let j = document.getElementById("job").value;
+    let d = document.getElementById("drivers_license").checked;
+    if (age < 0) {
+        alert("Iän pitää olla positiivinen luku")
+    } else {
+        let w = {
+            name: n,
+            age: a,
+            job: j,
+            driverslicense: d,
+        }
+        henkilot.push(w)
+        console.log(w)
+        luoRivit();
+    }
+
+}
