@@ -54,3 +54,31 @@ function date_and_time() {
 
     
 }
+
+let veijo = new Set(["Luku", "Poisto"]);
+let elvira = new Set(["Luku", "Kirjoitus", "Muokkaus"]);
+let mehdi = new Set(["Luku", "Muokkaus", "Poisto"]);
+let tuuli = new Set(["Kirjoitus", "Poisto"]);
+for (let a of veijo) {
+    let z = document.createElement("li")
+    z.innerHTML = a
+    document.getElementById("v").appendChild(z)
+}
+for (let a of elvira) {
+    let z = document.createElement("li")
+    z.innerHTML = a
+    document.getElementById("e").appendChild(z)
+}
+for (let a of mehdi) {
+    let z = document.createElement("li")
+    z.innerHTML = a
+    document.getElementById("m").appendChild(z)
+}
+for (let a of tuuli) {
+    let z = document.createElement("li")
+    z.innerHTML = a
+    document.getElementById("t").appendChild(z)
+}
+
+let vt = document.createElement("li")
+vt.innerHTML = veijo.union(tuuli)
