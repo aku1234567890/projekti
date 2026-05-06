@@ -41,6 +41,40 @@ function laskin_jako(){
     jako(n1, n2)
 }
 
+function laskin_abs(){
+    let n1 = Number(document.getElementById("numero1").value);
+    alert(Math.abs(n1))
+}
+
+function laskin_sqrt(){
+    let n1 = Number(document.getElementById("numero1").value);
+    alert(Math.sqrt(n1))
+}
+
+function laskin_pow(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    alert(Math.pow(n1, n2))
+}
+
+function laskin_max(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    alert(Math.max(n1, n2))
+}
+
+function laskin_min(){
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    alert(Math.min(n1, n2))
+}
+
+function laskin_round(){
+    let n1 = Number(document.getElementById("numero1").value);
+    alert(Math.round(n1))
+}
+
+
 function date_and_time() {
     let l = ["Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai"]
     let m = ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu"]
