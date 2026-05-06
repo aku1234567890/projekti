@@ -83,6 +83,24 @@ for (let a of tuuli) {
     z.innerHTML = a
     document.getElementById("t").appendChild(z)
 }
+for (let a of veijo.union(tuuli)) {
+    console.log(a)
+    let vt = document.createElement("li")
+    vt.innerHTML = a
+    document.getElementById("veijotuuli").appendChild(vt)
+}
 
-let vt = document.createElement("li")
-vt.innerHTML = veijo.union(tuuli)
+for (let a of mehdi.intersection(elvira)) {
+    console.log(a)
+    let vt = document.createElement("li")
+    vt.innerHTML = a
+    document.getElementById("mehdielvira").appendChild(vt)
+}
+
+for (let a of elvira.symmetricDifference(tuuli)) {
+    console.log(a)
+    let vt = document.createElement("li")
+    vt.innerHTML = a
+    document.getElementById("elviratuuli").appendChild(vt)
+}
+
