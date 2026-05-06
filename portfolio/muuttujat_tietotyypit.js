@@ -1,3 +1,7 @@
+let a = 3;
+let b = 5;
+let c = 7;
+let d = 15;
 
 function summa(a, b) {
     alert(a+b)
