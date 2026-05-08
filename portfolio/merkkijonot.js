@@ -21,7 +21,11 @@ function leikkaa() {
 }
 
 function etsi() {
-
+    let a = document.getElementById("k").value;
+    let b = document.getElementById("l").value;
+    let c = document.getElementById("m").value;
+    let d = a.replace(b, c)
+    document.getElementById("n").innerHTML = d
 }
 
 function poikki() {
