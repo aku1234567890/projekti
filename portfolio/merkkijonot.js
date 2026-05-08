@@ -13,7 +13,11 @@ function loyda() {
 }
 
 function leikkaa() {
-
+    let a = document.getElementById("g").value;
+    let b = document.getElementById("h").value;
+    let c = document.getElementById("i").value;
+    let d = a.slice(b, c)
+    document.getElementById("j").innerHTML = d
 }
 
 function etsi() {
@@ -21,5 +25,5 @@ function etsi() {
 }
 
 function poikki() {
-    
+
 }
