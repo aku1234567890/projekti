@@ -29,5 +29,12 @@ function etsi() {
 }
 
 function poikki() {
-
+    let a = document.getElementById("o").value;
+    let b = document.getElementById("p").value;
+    let c = a.split(b)
+    for (let d of c) {
+        let e = document.createElement("li")
+        e.innerHTML = d
+        document.getElementById("q").appendChild(e)
+    }
 }
