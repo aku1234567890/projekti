@@ -20,3 +20,11 @@ class Person {
         }
     }
 }
+
+let persons = [
+        new Person("Merja Meikäläinen", 20, "Opiskelija", true),
+        new Person("Teppo Teikäläinen", 25, "Sähköteknikko", true), 
+        new Person("Helena Heikäläinen", 30, "Ohjelmistosuunnittelija", false), 
+        new Person("Semir Sikäläinen", 18, "Opiskelija", true), 
+        new Person("Tomas Täkäläinen", 22, "Linja-autonkuljettaja", true)
+    ]
