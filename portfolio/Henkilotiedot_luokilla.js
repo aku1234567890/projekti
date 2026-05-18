@@ -6,14 +6,14 @@ class Person {
         this.driversLicense = driversLicense;
     }
     isUnderage() {
-        if (age < 18) {
+        if (this.age < 18) {
             return true
         } else {
             return false
         }
     }
     isStudent() {
-        if (job == "opiskelija" || job == "student") {
+        if (this.job == "Opiskelija" || this.job == "Student") {
             return true
         } else {
             return false
@@ -33,10 +33,10 @@ let rivit = document.querySelector("tbody")
 function luoRivit() {
     rivit.innerHTML = "";
     for (let henkilo of persons) {
-        if (!henkilo.isUnderage()) {
+        if (henkilo.isUnderage() == false) {
             henkilo.age = henkilo.age + "🍺"
         }
-        if (henkilo.isStudent()) {
+        if (henkilo.isStudent() == true) {
             henkilo.job = henkilo.job + "🎓"
         }
         let rivi = document.createElement("tr")
